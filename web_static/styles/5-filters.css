@@ -1,0 +1,74 @@
+.container .filters
+{
+	height: 70px;
+	width: 100%;
+	border: 1px solid #DDDDDD;
+	display: grid;
+	grid-template-columns: 10px 25% 25% 1fr 20% 30px;
+	grid-template-rows: 70px;
+	gap: 10px;
+	margin: 0;
+	padding: 0;
+}
+
+.container .filters > :first-child
+{
+	border-right: 1px solid #DDDDDD;
+}
+
+.container .filters button
+{
+	grid-column: 5;
+	position: relative;
+	font-size: 18px;
+	background-color: #FF5A5F;
+	color: #FFFFFF;
+	height: 48px;
+	border: none;
+	width: 100%;
+	border-radius: 4px 4px;
+	position: relative;
+	align-self: center;
+}
+
+.container .filters button:hover
+{
+	opacity: 0.9;
+}
+
+.amenities
+{
+	grid-column: 3;
+}
+
+.locations
+{
+	grid-column: 2;
+}
+
+.amenities, .locations
+{
+	height: 100%;
+	width: 100%;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.amenities h3, .locations h3
+{
+	display: flex;
+	font-weight: 600;
+	margin: 1px;
+	padding: 0px;
+}
+.amenities h4, .locations h4
+{
+	display: flex;
+	font-weight: 400;
+	font-size: 14px;
+	margin: 1px;
+	padding: 0px;
+}
