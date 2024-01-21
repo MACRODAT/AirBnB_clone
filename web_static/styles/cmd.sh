@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-for file in 3-*; do
-    echo "Copying $file to 4-${file#3-}"
-	cp "$file" "4-${file#3-}"
+for file in 4-*; do
+    echo "Copying $file to 5-${file#4-}"
+	cp -n "$file" "5-${file#4-}"
 done
